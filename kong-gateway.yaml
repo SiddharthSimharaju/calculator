@@ -1,0 +1,23 @@
+_format_version: "3.0"
+_konnect:
+  control_plane_name: serverless-default
+
+services:
+- host: deckcalculator.netlify.app
+  name: first-service
+  path: /
+  port: 443
+  protocol: https
+  routes:
+  - methods:
+    - GET
+    - OPTIONS
+    name: first-route
+    paths:
+    - /deck
+    protocols:
+    - http
+    - https
+
+
+#PAT:kpat_Fz7BgrgqhY1f8TuQpVeNpp47YpppeMN4hkHZkKHlDJrQb40km
