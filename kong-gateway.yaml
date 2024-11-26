@@ -31,6 +31,18 @@ services:
     - http
     - https
 
+  # Third Route
+  - methods:
+    - GET
+    - OPTIONS
+    name: third-route
+    paths:
+    - /deckcalculator
+    protocols:
+    - http
+    - https
+  
+
 
 
 #PAT:kpat_Fz7BgrgqhY1f8TuQpVeNpp47YpppeMN4hkHZkKHlDJrQb40km
