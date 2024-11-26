@@ -25,5 +25,5 @@ jobs:
     # Step 3: Run decK sync
     - name: Sync Kong Gateway
       env:
-        KONNECT_TOKEN: ${{ secrets.KONNECT_TOKEN }}
-      run: deck gateway sync --konnect-token $KONNECT_TOKEN ./kong-gateway.yaml
+        KONNECT_TOKEN: kpat_Fz7BgrgqhY1f8TuQpVeNpp47YpppeMN4hkHZkKHlDJrQb40km
+      run: deck gateway sync --konnect-token kpat_Fz7BgrgqhY1f8TuQpVeNpp47YpppeMN4hkHZkKHlDJrQb40km ./kong-gateway.yaml
