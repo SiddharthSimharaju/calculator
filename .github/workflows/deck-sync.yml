@@ -17,11 +17,13 @@ jobs:
     # Step 2: Download and Install decK
     - name: Install decK
       run: |
-        curl -Lo deck.tar.gz https://github.com/kong/deck/releases/latest/download/deck_linux_amd64.tar.gz
+        DECK_VERSION=1.15.0  
+        curl -Lo deck.tar.gz https://github.com/kong/deck/releases/download/v${DECK_VERSION}/deck_${DECK_VERSION}_linux_amd64.tar.gz
         tar -xvf deck.tar.gz
         chmod +x deck
         sudo mv deck /usr/local/bin/deck
-        deck version  # Verify installation
+        deck version 
+
 
     # Step 3: Run decK sync
     - name: Sync Kong Gateway
