@@ -9,6 +9,7 @@ services:
   port: 443
   protocol: https
   routes:
+  # First Route
   - methods:
     - GET
     - OPTIONS
@@ -18,6 +19,18 @@ services:
     protocols:
     - http
     - https
+  
+  # Second Route
+  - methods:
+    - GET
+    - OPTIONS
+    name: second-route
+    paths:
+    - /calculator
+    protocols:
+    - http
+    - https
+
 
 
 #PAT:kpat_Fz7BgrgqhY1f8TuQpVeNpp47YpppeMN4hkHZkKHlDJrQb40km
